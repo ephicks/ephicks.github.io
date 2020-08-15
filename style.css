@@ -1,0 +1,22 @@
+
+.nav {
+    display: inline-block;
+    padding: center;
+    background-color: cornsilk;
+}
+
+
+
+.left {
+    float: left;
+    width: 29%;
+    height: 800px;
+    background-color: burlywood;
+}
+
+.right {
+    float: right;
+    width: 70%;
+    height: 800px;
+    background-color: cornflowerblue;
+}
