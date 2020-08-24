@@ -1,0 +1,289 @@
+/* header CSS */
+
+#topSection {
+    display: grid;
+    background-color: #3D6D8F;
+    height: 120vh;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 20% 35% 45%;
+    grid-template-areas:
+    "logo pinkblob navigation"
+    "blankspace selfie header"
+    ;
+}
+
+
+.logo {
+    grid-area: logo;
+    background-image: url("../images/LOGO@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.pinkblob {
+    grid-area: pinkblob;
+    padding-left: 400px;
+    background-image: url("../images/pinkblob@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+#navigation {
+    grid-area: navigation;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    
+}
+
+#selfie {
+    grid-area: selfie;
+    background-image: url("../images/MEblob@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#header {
+    grid-area: header;
+    padding-left: 50px; 
+    background-image: url("../images/golden\ blob@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    background-position-x: center;
+}
+
+.blankspace {
+    grid-area: blankspace;
+    padding-left: 50px;
+    background-image: url("../images/blueblob@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+
+.resumeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #5EA7DB;
+    font-family: 'Open Sans', sans-serif;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    transform: translateY(10px);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.resumeButton:hover {
+    background-color: #5EA7DB;
+    color:white;
+    box-shadow: 4px 6px 10px #3d3d3d;
+}
+
+
+.icons {
+    transform: translate(60%, 20%);
+    padding: 10px;
+}
+
+.navBar {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 20px;
+    margin: 30px 5%;
+}
+
+.navBar:hover {
+    color: #FFD1C8;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 35px;
+    color: #3d3d3d;
+    line-height: 2;
+}
+
+h3 {
+    font-size: 30px;
+    color: #FFD1C8;
+}
+
+h4 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.topBody {
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    margin-right: 10px;
+}
+
+.dailyuiboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.swatch {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+}
+
+.colorContainer {
+    margin: 10px;
+}
+
+.date {
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border-top: none;
+}
+
+.arrowRight {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.arrowLeft{
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+#works {
+    height: 200vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "casestudy1"
+    "casestudy2"
+    "casestudy3";
+}
+
+.casestudy1 {
+    background-image: url(../images/casestudyblueblob@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 25% 45%;
+    grid-template-areas:
+    "mnffimages1 mnffimages2 textshit";
+}
+
+.textshit {
+    grid-area: textshit;
+    margin-top: 50px;
+    margin-right: 20px;
+    
+}
+
+.mnffimages1 {
+    grid-area: mnffimages1;
+    background-image: url("../images/MaskGroup1@2x.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    transform: translate(30%, 20%);
+    
+}
+
+.mnffimages2 {
+    grid-area: mnffimages2;
+    background-image: url("../images/MaskGroup2@2x.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    transform: translate(5%, 10%);
+
+}
+
+.bodyText {
+    color: #3d3d3d;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+}
+
+.readmorebutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD1C8;
+    color: #5EA7DB;
+    font-family: 'Open Sans', sans-serif;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.readmorebutton:hover {
+    box-shadow: 4px 6px 10px #3d3d3d;
+}
+
+.casestudy2 {
+    background-image: url(../images/casestudypinkblob@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 45% 55% ;
+    grid-template-columns: 45% 55%;
+    grid-template-areas:
+    "textshitdhs dhsimage1"
+    "textshitdhs dhsimage2";
+}
+
+.textshitdhs {
+    grid-area: textshitdhs;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+.dhsimage1 {
+    grid-area: dhsimage1;
+    background-image: url("../images/dhsimage1@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.dhsimage2 {
+    grid-area: dhsimage2;
+    background-image: url("../images/dhsimage2@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+}
