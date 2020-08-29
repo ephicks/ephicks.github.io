@@ -1,9 +1,13 @@
 /* header CSS */
+body {
+    min-width: 800px;
+}
 
 #topSection {
     display: grid;
     background-color: #3D6D8F;
-    height: 120vh;
+    height: 100%;
+    width: 100%;
     grid-template-rows: 20% 80%;
     grid-template-columns: 20% 35% 45%;
     grid-template-areas:
@@ -61,6 +65,24 @@
     background-position-x: center;
 }
 
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.linkedin {
+    padding: 5px;
+}
+
+.instagram {
+    padding: 5px;
+}
+
+.facebook {
+    padding: 5px;
+}
+
 .blankspace {
     grid-area: blankspace;
     padding-left: 50px;
@@ -93,11 +115,6 @@
 }
 
 
-.icons {
-    transform: translate(60%, 20%);
-    padding: 10px;
-}
-
 .navBar {
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 20px;
@@ -123,6 +140,8 @@ h2 {
 h3 {
     font-size: 30px;
     color: #FFD1C8;
+    font-weight: 300;
+    font-style: italic;
 }
 
 h4 {
@@ -176,19 +195,9 @@ h4 {
     margin-right: 10px;
 }
 
-#works {
-    height: 200vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "casestudy1"
-    "casestudy2"
-    "casestudy3";
-}
 
 .casestudy1 {
-    background-image: url(../images/casestudyblueblob@2x.png);
+    background-image: url("../images/casestudyblueblob@2x.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -204,7 +213,7 @@ h4 {
 .textshit {
     grid-area: textshit;
     margin-top: 50px;
-    margin-right: 20px;
+    margin-right: 50px;
     
 }
 
@@ -252,14 +261,15 @@ h4 {
 }
 
 .casestudy2 {
-    background-image: url(../images/casestudypinkblob@2x.png);
+    background-image: url("../images/casestudypinkblob@2x.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     height: 90vh;
     display: grid;
-    grid-template-rows: 45% 55% ;
-    grid-template-columns: 45% 55%;
+    margin-bottom: 200px;
+    grid-template-rows: 50% 50% ;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
     "textshitdhs dhsimage1"
     "textshitdhs dhsimage2";
@@ -268,7 +278,8 @@ h4 {
 .textshitdhs {
     grid-area: textshitdhs;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-right: 20px;
     
 }
 
@@ -276,7 +287,9 @@ h4 {
     grid-area: dhsimage1;
     background-image: url("../images/dhsimage1@2x.png");
     background-repeat: no-repeat;
+    background-position: left bottom;
     background-size: contain;
+    margin-bottom: 10px;
     
 }
 
@@ -284,6 +297,74 @@ h4 {
     grid-area: dhsimage2;
     background-image: url("../images/dhsimage2@2x.png");
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: contain;
-    margin-top: 20px;
+    margin-top: 10px;
+   
+}
+
+.casestudy3 {
+    background-image: url("../images/casestudygoldblob@2x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 25% 45%;
+    grid-template-areas:
+    "tfimage1 tfimage2 textshittf";
+}
+
+.textshittf {
+    grid-area: textshittf;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.tfimage1 {
+    grid-area: tfimage1;
+    background-image: url("../images/tellyfish1@2x.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    transform: translate(30%, 20%);
+}
+
+.tfimage2 {
+    grid-area: tfimage2;
+    background-image: url("../images/tellyfish2.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    transform: translate(5%, 10%);
+    
+}
+
+#footer {
+    background-color: #3D6D8F;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "email links"
+    ;
+}
+
+
+.links {
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    grid-area: email;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
