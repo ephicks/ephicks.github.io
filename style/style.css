@@ -6,9 +6,11 @@ body {
 #topSection {
     display: grid;
     background-color: #3D6D8F;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 110%;
     width: 100%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 15% 85%;
     grid-template-columns: 20% 35% 45%;
     grid-template-areas:
     "logo pinkblob navigation"
@@ -90,6 +92,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 10px;
+    margin-top: 50px;
 }
 
 
@@ -345,7 +348,7 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 30%;
+    height: 40%;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
