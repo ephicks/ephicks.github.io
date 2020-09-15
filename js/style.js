@@ -17,22 +17,22 @@ function scrollNav() {
   }
   scrollNav();
 
-  function scrollBanner() {
-    $(document).on('scroll', function(){
-    var scrollPos = $(this).scrollTop();
-      $('.parallax-fade-top').css({
-        'top' : (scrollPos/2)+'px',
-        'opacity' : 1-(scrollPos/700)
-      });
-      $('.parallax-00').css({
-        'top' : (scrollPos/-3.5)+'px'
-      });
-      $('.parallax-01').css({
-        'top' : (scrollPos/-2.8)+'px'
-      });
-      $('.parallax-top-shadow').css({
-        'top' : (scrollPos/-2)+'px'
-      });
-    });    
+  
+  var amountScrolled = 200;
+  var amountScrolledNav = 25;
+  
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('button.back-to-top').addClass('show');
+    } else {
+      $('button.back-to-top').removeClass('show');
     }
-  scrollBanner();	  
+  });
+  
+  $('button.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+  
