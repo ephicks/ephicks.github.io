@@ -1,7 +1,9 @@
 /* header CSS */
 body {
     min-width: 800px;
+    margin: 0;
 }
+
 
 #topSection {
     display: grid;
@@ -31,7 +33,7 @@ body {
 .pinkblob {
     grid-area: pinkblob;
     padding-left: 400px;
-    background-image: url("../images/pinkblob@2x.png");
+    background-image: url("../images/03_pinkblob@2x.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 10px;
@@ -60,7 +62,7 @@ body {
 #header {
     grid-area: header;
     padding-left: 50px; 
-    background-image: url("../images/golden\ blob@2x.png");
+    background-image: url("../images/01_goldblob@2x.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 10px;
@@ -89,11 +91,11 @@ body {
 
 .blankspace {
     grid-area: blankspace;
-    padding-left: 50px;
-    background-image: url("../images/blueblob@2x.png");
+    padding-left: 20px;
+    background-image: url("../images/02_blueblob@2x.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top: 50px;
 }
 
@@ -102,8 +104,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: #5EA7DB;
+    background-color: transparent;
     font-family: 'Open Sans', sans-serif;
     width: 150px;
     height: 45px;
@@ -111,11 +112,6 @@ body {
     transform: translateY(10px);
     border-radius: 5px;
     transition: 0.3s;
-}
-
-
-.resumeButton:hover {
-    box-shadow: 4px 6px 10px #FFD1C8;
 }
 
 .navBar {
@@ -128,6 +124,7 @@ body {
 
 .navBar:hover {
     color: #FFD1C8;
+    text-decoration: underline;
 }
 
 h1 {
@@ -162,41 +159,6 @@ h4 {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     line-height: 2;
-    margin-right: 10px;
-}
-
-.dailyuiboxes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.swatch {
-    height: 150px;
-    width: 150px;
-    border: 1px solid #3d3d3d;
-    border-radius: 5px;
-}
-
-.colorContainer {
-    margin: 10px;
-}
-
-.date {
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    border-top: none;
-}
-
-.arrowRight {
-    margin-top: 50px;
-    margin-left: 10px;
-}
-
-.arrowLeft{
-    margin-top: 50px;
     margin-right: 10px;
 }
 
@@ -382,9 +344,9 @@ button.back-to-top{
       height: 0px;
     width: 0px;
     overflow: hidden;
-      border-radius: 50px;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
+      border-radius: 60px;
+      -webkit-border-radius: 60px;
+      -moz-border-radius: 60px;
     color: transparent;
       clear: both;
     visibility: hidden;
@@ -399,14 +361,9 @@ button.back-to-top{
     z-index: 99;
     transition: all .3s ease-in-out;
   }
-  button.back-to-top:hover,
-  button.back-to-top:active,
-  button.back-to-top:focus, {
-    outline: 0 !important;
-  }
   
   button.back-to-top::before {
-    content: "\f077";
+    content: url("https://img.icons8.com/bubbles/100/000000/up.png");
     font-family: "FontAwesome";
     display: block;
     vertical-align: middle;
@@ -414,23 +371,22 @@ button.back-to-top{
   }
   button.back-to-top.show {
     display: block;
-    background: #fff;
+    background: transparent;
     color: #00ab6c;
     font-size: 25px;
     right: 25px;
       bottom: 50px;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     visibility: visible;
-      box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    
   }
   button.back-to-top.show:active {
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
   }
+
 
 
 
